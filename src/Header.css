@@ -1,0 +1,115 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1em;
+  min-width: 1000px;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header__logo {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.header__logo:hover,
+.header__logo:focus,
+.header__logo:active {
+  opacity: 0.7;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #cd9042;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__option {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__option:hover {
+  color: #cd9042;
+  opacity: 0.7;
+}
+.header__optionBasket:hover,
+.header__optionBasket:focus,
+.header__optionBasket:active {
+  color: #cd9042;
+  opacity: 0.7;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+@media (max-width: 375px) {
+  .header {
+    display: none;
+  }
+}

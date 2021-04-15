@@ -1,0 +1,21 @@
+.media__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  background-color: var(--background-color);
+  z-index: 20;
+  padding: 20px;
+}
+
+.media__cardArea > img {
+  width: 100%;
+  /* object-fit: contain; */
+  max-height: 320px;
+}
+
+.media__cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

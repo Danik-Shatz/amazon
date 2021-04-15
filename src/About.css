@@ -1,0 +1,21 @@
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.about__header {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.about__description > p {
+  padding: 10px;
+}
+
+.about__thanks {
+  padding: 20px;
+}
